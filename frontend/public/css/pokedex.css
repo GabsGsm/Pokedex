@@ -1,0 +1,180 @@
+.lista-pokemon{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    list-style: none;
+    overflow-x: hidden;
+    width: 100%;
+    color: var(--font-color-pokedex);
+}
+.lista-pokemon li{
+    border-radius: 18px;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+}
+.content-poke{
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   padding: 18px 0 12px 12px;
+   position: relative;
+   overflow: hidden;
+}
+.info-div{
+    z-index: 2;
+}
+.info-div p:nth-child(2){
+    margin-top: calc(1.17em + 16px);
+}
+.info-div p{
+    width: fit-content;
+    padding: 0 8px 2px;
+    line-height: 1.4;
+    text-align: center;
+    border-radius: 16px;
+    backdrop-filter: blur(100px);
+}
+.type-pokemon{
+    margin-top: 8px;
+}
+.nome-pokemon{
+    display: inline;
+    position: absolute;
+}
+.image-div{
+    padding-top: 10px;
+    padding-left: 4px;
+    z-index: 1;
+}
+.image-pokemon{
+    width: 100%;
+}
+.grass {
+    background: linear-gradient(to top right, var(--grass-dark), var(--grass-medium), var(--grass-dark));
+    fill: var(--grass-light);
+}
+
+.poison {
+    background: linear-gradient(to top right, var(--poison-dark), var(--poison-medium), var(--poison-dark));
+    fill: var(--poison-light);
+}
+
+.fire {
+    background: linear-gradient(to top right, var(--fire-dark), var(--fire-medium), var(--fire-dark));
+    fill: var(--fire-light);
+}
+
+.water {
+    background: linear-gradient(to top right, var(--water-dark), var(--water-medium), var(--water-dark));
+    fill: var(--water-light);
+}
+
+.electric {
+    background: linear-gradient(to top right, var(--electric-dark), var(--electric-medium), var(--electric-dark));
+    fill: var(--electric-light);
+}
+
+.flying {
+    background: linear-gradient(to top right, var(--flying-dark), var(--flying-medium), var(--flying-dark));
+    fill: var(--flying-light);
+}
+
+.bug {
+    background: linear-gradient(to top right, var(--bug-dark), var(--bug-medium), var(--bug-dark));
+    fill: var(--bug-light);
+}
+
+.normal {
+    background: linear-gradient(to top right, var(--normal-dark), var(--normal-medium), var(--normal-dark));
+    fill: var(--normal-light);
+}
+
+.ground {
+    background: linear-gradient(to top right, var(--ground-dark), var(--ground-medium), var(--ground-dark));
+    fill: var(--ground-light);
+}
+
+.fairy {
+    background: linear-gradient(to top right, var(--fairy-dark), var(--fairy-medium), var(--fairy-dark));
+    fill: var(--fairy-light);
+}
+
+.fighting {
+    background: linear-gradient(to top right, var(--fighting-dark), var(--fighting-medium), var(--fighting-dark));
+    fill: var(--fighting-light);
+}
+
+.psychic {
+    background: linear-gradient(to top right, var(--psychic-dark), var(--psychic-medium), var(--psychic-dark));
+    fill: var(--psychic-light);
+}
+
+.rock {
+    background: linear-gradient(to top right, var(--rock-dark), var(--rock-medium), var(--rock-dark));
+    fill: var(--rock-light);
+}
+
+.steel {
+    background: linear-gradient(to top right, var(--steel-dark), var(--steel-medium), var(--steel-dark));
+    fill: var(--steel-light);
+}
+
+.ice {
+    background: linear-gradient(to top right, var(--ice-dark), var(--ice-medium), var(--ice-dark));
+    fill: var(--ice-light);
+}
+
+.ghost {
+    background: linear-gradient(to top right, var(--ghost-dark), var(--ghost-medium), var(--ghost-dark));
+    fill: var(--ghost-light);
+}
+
+.dragon {
+    background: linear-gradient(to top right, var(--dragon-dark), var(--dragon-medium), var(--dragon-dark));
+    fill: var(--dragon-light);
+}
+.pokeball-icon{
+    width: 100px;
+    height: 100px;
+    z-index: 0;
+    position: absolute;
+    right: -5%;
+    top: 12px;
+}
+.order{
+    position: absolute;
+    bottom: 4px;
+    right: 8px;
+}
+header{
+    color: var(--font-color-pokedex-dark);
+}
+#icon-pokedex-background{
+    width: 170px;
+    height: 260px;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: -60px;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+}
+#icon-pokedex-background image{
+    width: 260px;
+    height: 260px;
+}
+@media screen and (min-width: 768px) {
+    .lista-pokemon{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+}
+@media screen and (min-width: 980px) {
+    .lista-pokemon{
+        grid-template-columns: repeat(6, 1fr);
+        gap: 20px;
+    }
+}

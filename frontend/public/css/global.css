@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body,html{
+width: 100vw;
+overflow-x: hidden;
+max-width: 100%;
+}
+
+.content{
+    padding: 1rem;
+    margin-top: 50px
+}
+
+
+/*
+Cores usada como base
+
+:root{
+    --grass : #399b39;
+    --poison : #93309c;
+    --fire : #ff893f;
+    --flying : #8dade7; 
+    --water : #3a75e3;
+    --bug : #78bc43;
+    --normal : #989bae;
+    --electric : #edcf10;
+    --ground : #d4692a;
+    --fairy : #f886df;
+    --fighting : #cc3744;
+    --psychic : #f994a8;
+    --rock : #b0a581;
+    --steel : #557a8d;
+    --ice : #65bdb9;
+    --ghost : #4834a0;
+    --dragon : #1315a0;
+}
+*/
+/*
+:root {
+    --grass-dark: #00845B;
+    --grass-medium: #48CFAF;
+    --grass-light: #9CE6D8;
+  
+    --fire-dark: #B82B2B;
+    --fire-medium: #FB6C6C;
+    --fire-light: #FFA8A8;
+  
+    --water-dark: #155EAB;
+    --water-medium: #76BDFE;
+    --water-light: #BFDFFA;
+  
+    --electric-dark: #D69A00;
+    --electric-medium: #FFD86F;
+    --electric-light: #FFE6A2;
+  
+    --poison-dark: #8C448C;
+    --poison-medium: #c874c8;
+    --poison-light: #E7AFE7;
+  
+    --flying-dark: #3D55A4;
+    --flying-medium: #a4b6e7;
+    --flying-light: #D1D6F0;
+  
+    --bug-dark: #5E985E;
+    --bug-medium: #a9d097;
+    --bug-light: #CDE3CD;
+  
+    --normal-dark: #80859E;
+    --normal-medium: #c3c5d6;
+    --normal-light: #E2E4F2;
+  
+    --ground-dark: #A84823;
+    --ground-medium: #df8b5b;
+    --ground-light: #F8CCAC;
+  
+    --fairy-dark: #CD64CD;
+    --fairy-medium: #fbaee5;
+    --fairy-light: #FFD6FF;
+  
+    --fighting-dark: #B6383E;
+    --fighting-medium: #d8828f;
+    --fighting-light: #E8A4A7;
+  
+    --psychic-dark: #C25D80;
+    --psychic-medium: #fbb3c2;
+    --psychic-light: #FFD1DD;
+  
+    --rock-dark: #8F8A75;
+    --rock-medium: #bcb8a4;
+    --rock-light: #D7D4C2;
+  
+    --steel-dark: #4D7088;
+    --steel-medium: #7e9eaf;
+    --steel-light: #A8C2D2;
+  
+    --ice-dark: #597F7D;
+    --ice-medium: #8acbc7;
+    --ice-light: #B9E6E4;
+  
+    --ghost-dark: #3A2C75;
+    --ghost-medium: #7669b7;
+    --ghost-light: #A095D0;
+  
+    --dragon-dark: #0E0F74;
+    --dragon-medium: #3437b7;
+    --dragon-light: #6468D3;
+
+    --font-color-pokedex: #fff;
+  }*/
+  :root {
+    --grass-dark: #00A27B;
+    --grass-medium: #5FD9AF;
+    --grass-light: #A0FFD6;
+
+    --fire-dark: #DB5656;
+    --fire-medium: #FF8B8B;
+    --fire-light: #FFC3C3;
+
+    --water-dark: #4C82D1;
+    --water-medium: #99AEEF;
+    --water-light: #C7D8FF;
+
+    --electric-dark: #FFB200;
+    --electric-medium: #FFD866;
+    --electric-light: #FFE9A8;
+
+    --poison-dark: #B85AB8;
+    --poison-medium: #D98BD9;
+    --poison-light: #EFC3EF;
+
+    --flying-dark: #6677C1;
+    --flying-medium: #A5B4E6;
+    --flying-light: #CFCFEF;
+
+    --bug-dark: #7BAC7B;
+    --bug-medium: #B4D1B4;
+    --bug-light: #D3E4D3;
+
+    --normal-dark: #A0A5C0;
+    --normal-medium: #CCCFE4;
+    --normal-light: #E8E9F5;
+
+    --ground-dark: #C67E51;
+    --ground-medium: #E3B48A;
+    --ground-light: #F8D9C5;
+
+    --fairy-dark: #E88AE8;
+    --fairy-medium: #FFC6FF;
+    --fairy-light: #FFE8FF;
+
+    --fighting-dark: #D27074;
+    --fighting-medium: #E8A1A5;
+    --fighting-light: #FAB5B8;
+
+    --psychic-dark: #E16A8D;
+    --psychic-medium: #FFACC1;
+    --psychic-light: #FFD1E0;
+
+    --rock-dark: #A09E8B;
+    --rock-medium: #C8C6B6;
+    --rock-light: #E2E1D8;
+
+    --steel-dark: #6689A2;
+    --steel-medium: #8FA6B6;
+    --steel-light: #B4C2CE;
+
+    --ice-dark: #7FA9A7;
+    --ice-medium: #A4C9C7;
+    --ice-light: #C1E3E1;
+
+    --ghost-dark: #7165A7;
+    --ghost-medium: #9C92C5;
+    --ghost-light: #BFAFD6;
+
+    --dragon-dark: #2D2E88;
+    --dragon-medium: #6163B7;
+    --dragon-light: #9598D3;
+
+    --font-color-pokedex: #fefefe;
+    --font-color-pokedex-dark: #303943;
+
+    --icon-pokedex-background: #F5F5F6;
+}

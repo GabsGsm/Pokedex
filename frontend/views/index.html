@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/global.css"> <!--Servidor express-->
+    <link rel="stylesheet" href="../public/css/global.css"> <!--LiteServer-->
+    <link rel="stylesheet" href="css/pokedex.css"> <!--Servidor express-->
+    <link rel="stylesheet" href="../public/css/pokedex.css"> <!--LiteServer-->
+
+</head>
+<body>
+    <svg id="icon-pokedex-background" width="200" height="200">
+        <image id="icon-pokeball" width="200" height="200" xlink:href="..//svg/pokeball_icon.svg" />
+    </svg>
+      
+    <section class="content">
+        <header>
+            <h1>Pokedex</h1>
+        </header>
+        <div>
+            <ol data-js="pokemon-list" class="lista-pokemon">
+
+            </ol>
+        </div>
+    </section>
+
+    <script type="module" src="js/index.js"></script>
+    <script type="module" src="../public/js/index.js"></script>
+</body>
+</html>
